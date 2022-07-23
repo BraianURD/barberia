@@ -58,7 +58,7 @@ a:hover{
 /* letras */
 h1{
     padding: 10px;
-    background-color: black;
+    background: linear-gradient(to top,#16222A,#3A6073);
     font-size: 3em;
     color: white;
     font-family: 'Cormorant SC', serif;
@@ -103,7 +103,7 @@ footer{
     grid-template-areas: 
     "seguinos contactos ubicacion"
     "footer footer footer";
-    background-color: black;
+    background: linear-gradient(to bottom,#16222A,#3A6073);
 }
 
 .seguinos{
@@ -170,6 +170,20 @@ img{
     padding-left: 10px;
 }
 
+@keyframes mapa{
+    0%{
+        width: 0%;
+    }
+    100%{
+        width: 100%;
+    }
+}
+
+iframe{
+    animation-name: mapa;
+    animation-duration: 2s;
+}
+
 @media screen and (max-width:1024px) {
 
     h1{
@@ -200,6 +214,15 @@ img{
     
     input{
         font-size: 1em;
+    }
+
+    .boton{
+        color: white;
+        background-color: red;
+    }
+    
+    .boton:hover{
+        filter: grayscale(70%);
     }
 
 }
