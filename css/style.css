@@ -1,0 +1,223 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+/* grid */
+
+.padreGrid{
+    display: grid;
+    grid-template-columns: repeat(1,1fr);
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "form"
+    "footer";
+    grid-gap: 10px;
+}
+header{
+    grid-area: header;
+}
+main{
+    grid-area: main;
+}
+nav{
+    grid-area:nav ;
+}
+footer{
+    grid-area: footer;
+}
+form{
+    grid-area: form;
+}
+/* nav */
+nav {
+    display: flex;
+    background-color: #000814;
+    justify-content: center ;
+}
+
+nav a{
+    padding-left: 60px;
+    padding-right: 60px;
+    color: white;
+    font-size: 3em;
+    text-decoration: none;
+    font-family: 'Cormorant SC', serif;
+    
+}
+
+a:hover{
+    font-family:'Cormorant SC', serif ;
+    color: yellow;
+
+
+}
+
+/* letras */
+h1{
+    padding: 10px;
+    background-color: black;
+    font-size: 3em;
+    color: white;
+    font-family: 'Cormorant SC', serif;
+    border: 1px solid black;
+}
+
+h2{
+    background-color: black;
+    color: white;
+    font-size: 1.5em;
+    font-family: 'Cormorant SC', serif;
+    text-align: center;
+}
+p{
+    font-weight: bold;
+    padding-top: 20px;
+    text-align: center;
+    font-family: 'Courier New', Courier, monospace;
+    color: white;
+    font-size: 1em;
+}
+
+.servicios{
+    text-align: left;
+    font-weight: 100;
+    background-color: #000814;
+    font-size: 1.8em;
+    color: white;
+}
+
+/* imagen */
+.horarios{
+    background-image:url(../imagenes/fotoinicio.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+/* footer */
+footer{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "seguinos contactos ubicacion"
+    "footer footer footer";
+    background-color: black;
+}
+
+.seguinos{
+    grid-area: seguinos;
+    border: 0px solid #705d56;
+}
+
+.contactos{
+    grid-area: contactos;
+    border: 0px solid #705d56;
+}
+
+.ubicacion{
+    grid-area: ubicacion;
+    border:0px solid #705d56;
+}
+a{
+    color: white;
+    font-size: 20px;
+    text-decoration: none;
+    font-family: 'Cormorant SC', serif;
+}
+
+h4{
+    grid-area: footer;
+    color: white;
+    text-align: center;
+    
+}
+/* formulario */
+fieldset{
+    padding: 40px;
+    padding-left: 20px;
+    background-color: black;
+    padding-left:15%;
+}
+
+label{
+    font-size: 1.5em;
+    color: white;
+}
+
+input{
+    font-size: 1.5em;
+}
+
+h3{
+    color: white;
+}
+
+/* REDES SOCIALES */
+
+.redesSociales{
+    padding-left: 10%;
+    background-color: #705d56;
+}
+
+img:hover{
+    width: 20%;
+}
+
+img{
+    width: 23%;
+    padding-left: 10px;
+}
+
+@media screen and (max-width:1024px) {
+
+    h1{
+        text-align: center;
+    }
+
+    nav, ul, li, a{
+        font-size: 0.9em;
+    }
+
+    .servicios{
+        text-align: center;
+        background-color: #000814;
+        font-size: 1.4em;
+        color: white;
+    }
+
+    fieldset{
+        padding: 6px;
+        padding-left: 10px;
+        background-color: black;
+    }
+    
+    label{
+        font-size: 1em;
+        color: white;
+    }
+    
+    input{
+        font-size: 1em;
+    }
+
+}
+
+@media screen and (max-width:546px) {
+
+    fieldset{
+        padding: 2px;
+        padding-left: 3px;
+        background-color: black;
+    }
+    
+    label{
+        font-size: 1em;
+        color: white;
+    }
+    
+    input{
+        font-size: 0.7em;
+    }
+}
